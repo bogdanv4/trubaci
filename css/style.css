@@ -49,18 +49,6 @@ ul {
   }
 }
 
-.about {
-  .row-about {
-    ul {
-      list-style: none;
-
-      li {
-        list-style: none;
-      }
-    }
-  }
-}
-
 .map {
   background-color: #2d2d30;
   iframe {
@@ -69,9 +57,22 @@ ul {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+
+  .container {
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  .band-about > div {
+    margin-bottom: 60px;
+  }
+
+  .contact-text {
+    text-align: center;
   }
 }
 
