@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">+381 69 434 5355</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">POČETNA</a></li>
+            <li><a href="#band">O NAMA</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container-fluid hero">
+      <div class="container hero-text">
+        <h1>Trubači za sve prilike</h1>
+        <p>Zvuk tradicije i slavlja</p>
+      </div>
+    </section>
+
+    <!-- Container (The Band Section) -->
+    <div id="band" class="container text-center">
+      <h3>O NAMA</h3>
+      <p>
+        Naši trubački orkestri sa sedištem u Beogradu nastupaju širom Balkana,
+        donoseći neponovljivu energiju i autentičan duh svakom događaju. Bilo da
+        slavite svadbu, rođendan, krštenje, slavlje firme ili neki drugi povod –
+        mi smo tu da podignemo atmosferu do vrhunca! Iskusni muzičari,
+        originalni repertoar i nastupi koji se pamte – to je ono što nas
+        izdvaja!
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="row band-about text-center">
+        <div class="col-md-6">
+          <h3>Zašto baš mi?</h3>
+          <ul>
+            <li>Iskusni trubači i profesionalan nastup</li>
+            <li>Repertoar prilagođen vašem ukusu</li>
+            <li>Energija koja pokreće goste</li>
+            <li>Pristupačne cene i pouzdanost</li>
+            <li>Dolazak moguć na celoj teritoriji Balkana</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Pogodno za svaku priliku:</h3>
+          <ul>
+            <li>Svadbe i svadbena veselja</li>
+            <li>Krštenja i rođendani</li>
+            <li>Ispraćaji i dočeci</li>
+            <li>Privatne i korporativne proslave</li>
+            <li>Ulične svirke i festivali</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h3>GDE SVIRAMO?</h3>
+      <p>Dolazak je moguć na celoj teritoriji Balkana!</p>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1AVXU7mBkFhCIM-sgv6CDKC_z16V6CAY&ehbc=2E312F&noprof=1"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+      <h3 class="text-center">Kontakt</h3>
+      <p class="text-center">
+        <em>Kontaktirajte nas na broj ili popunite formu</em>
+      </p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>Poziv / Viber / WhatsApp</p>
+          <p><span class="glyphicon glyphicon-phone"></span>+381 69 434 5355</p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Ime"
+                type="text"
+                required
+              />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            placeholder="Poruka"
+            rows="5"
+          ></textarea>
+          <br />
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button class="btn pull-right" type="submit">Pošalji</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span> </a
+      ><br /><br />
+      <p>
+        Kontaktirajte nas:
+        <a href="#">+381 69 434 5355</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
