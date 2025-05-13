@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,18 +8,23 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Lato"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Open+Sans&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css"
-    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "j6lVrDyuoV57HnrHJ",
+        });
+      })();
+    </script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -60,12 +64,15 @@
     <div id="band" class="container text-center">
       <h3>O NAMA</h3>
       <p>
-        Naši trubački orkestri sa sedištem u Beogradu nastupaju širom Balkana,
-        donoseći neponovljivu energiju i autentičan duh svakom događaju. Bilo da
-        slavite svadbu, rođendan, krštenje, slavlje firme ili neki drugi povod –
-        mi smo tu da podignemo atmosferu do vrhunca! Iskusni muzičari,
-        originalni repertoar i nastupi koji se pamte – to je ono što nas
-        izdvaja!
+        Naši trubački orkestri sa sedištem u Beogradu nastupaju širom
+        <span style="color: #ffb220"><strong>Balkana</strong></span> , donoseći
+        neponovljivu energiju i autentičan duh svakom događaju. Bilo da slavite
+        <span style="color: #ffb220">
+          <strong> svadbu, rođendan, krštenje, slavlje firme </strong>
+        </span>
+        ili neki drugi povod – mi smo tu da podignemo atmosferu do vrhunca!
+        Iskusni muzičari, originalni repertoar i nastupi koji se pamte – to je
+        ono što nas izdvaja!
       </p>
       <br />
       <br />
@@ -75,21 +82,33 @@
         <div class="col-md-6">
           <h3>Zašto baš mi?</h3>
           <ul>
-            <li>Iskusni trubači i profesionalan nastup</li>
-            <li>Repertoar prilagođen vašem ukusu</li>
-            <li>Energija koja pokreće goste</li>
-            <li>Pristupačne cene i pouzdanost</li>
-            <li>Dolazak moguć na celoj teritoriji Balkana</li>
+            <li>
+              <span>🎺</span> Iskusni trubači i profesionalan nastup
+              <span>🎺</span>
+            </li>
+            <li>
+              <span>🎺</span> Repertoar prilagođen vašem ukusu <span>🎺</span>
+            </li>
+            <li><span>🎺</span> Energija koja pokreće goste <span>🎺</span></li>
+            <li>
+              <span>🎺</span> Pristupačne cene i pouzdanost <span>🎺</span>
+            </li>
+            <li>
+              <span>🎺</span> Dolazak moguć na celoj teritoriji Balkana
+              <span>🎺</span>
+            </li>
           </ul>
         </div>
         <div class="col-md-6">
           <h3>Pogodno za svaku priliku:</h3>
           <ul>
-            <li>Svadbe i svadbena veselja</li>
-            <li>Krštenja i rođendani</li>
-            <li>Ispraćaji i dočeci</li>
-            <li>Privatne i korporativne proslave</li>
-            <li>Ulične svirke i festivali</li>
+            <li><span>🎺</span> Svadbe i svadbena veselja <span>🎺</span></li>
+            <li><span>🎺</span> Krštenja i rođendani<span>🎺</span></li>
+            <li><span>🎺</span> Ispraćaji i dočeci<span>🎺</span></li>
+            <li>
+              <span>🎺</span> Privatne i korporativne proslave<span>🎺</span>
+            </li>
+            <li><span>🎺</span> Ulične svirke i festivali<span>🎺</span></li>
           </ul>
         </div>
       </div>
@@ -99,6 +118,7 @@
       <br />
       <h3>GDE SVIRAMO?</h3>
       <p>Dolazak je moguć na celoj teritoriji Balkana!</p>
+      <br />
       <div class="map">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1AVXU7mBkFhCIM-sgv6CDKC_z16V6CAY&ehbc=2E312F&noprof=1"
@@ -112,11 +132,14 @@
       <p class="text-center">
         <em>Kontaktirajte nas na broj ili popunite formu</em>
       </p>
+      <br />
 
       <div class="row">
         <div class="col-md-4 contact-text">
           <p>Poziv / Viber / WhatsApp</p>
-          <p><span class="glyphicon glyphicon-phone"></span>+381 69 434 5355</p>
+          <p>
+            <span class="glyphicon glyphicon-phone"></span> +381 69 434 5355
+          </p>
         </div>
         <div class="col-md-8">
           <div class="row">
@@ -129,6 +152,7 @@
                 type="text"
                 required
               />
+              <p class="error">Error: Ime mora da sadrži barem 3 karaktera</p>
             </div>
             <div class="col-sm-6 form-group">
               <input
@@ -139,6 +163,7 @@
                 type="email"
                 required
               />
+              <p class="error">Error: Email mora biti u validnom formatu</p>
             </div>
           </div>
           <textarea
@@ -148,12 +173,20 @@
             placeholder="Poruka"
             rows="5"
           ></textarea>
+          <p class="error">Error: Poruka mora sadržati barem 10 karaktera</p>
           <br />
           <div class="row">
             <div class="col-md-12 form-group">
-              <button class="btn pull-right" type="submit">Pošalji</button>
+              <button id="submitBtn" class="btn pull-right" type="submit">
+                Pošalji
+              </button>
             </div>
           </div>
+          <p class="confirm-sent text-success">
+            Poruka je poslata. <br />
+            Kontaktiraćemo Vas u najkraćem roku putem email adrese koju ste
+            ostavili!
+          </p>
         </div>
       </div>
     </div>
@@ -169,6 +202,7 @@
       </p>
     </footer>
 
+    <script src="js/animation.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
