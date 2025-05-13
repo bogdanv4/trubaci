@@ -78,11 +78,11 @@ ul {
 }
 
 .heading-trumpet {
-  opacity: 0;
+  display: none;
 }
 
 .li-trumpet {
-  opacity: 1;
+  display: inline;
 }
 
 .map {
@@ -117,11 +117,11 @@ ul {
   }
 
   .heading-trumpet {
-    opacity: 1;
+    display: inline;
   }
 
   .li-trumpet {
-    opacity: 0;
+    display: none;
   }
 }
 
