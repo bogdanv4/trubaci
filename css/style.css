@@ -57,6 +57,10 @@ ul {
   }
 }
 
+.color-golden {
+  color: #ffb220;
+}
+
 #band p,
 .band-about ul li {
   line-height: 2;
@@ -71,6 +75,14 @@ ul {
 .band-about ul li:hover {
   transform: scale(1.2);
   cursor: default;
+}
+
+.heading-trumpet {
+  opacity: 0;
+}
+
+.li-trumpet {
+  opacity: 1;
 }
 
 .map {
@@ -102,6 +114,14 @@ ul {
 
   .contact-text {
     text-align: center;
+  }
+
+  .heading-trumpet {
+    opacity: 1;
+  }
+
+  .li-trumpet {
+    opacity: 0;
   }
 }
 
