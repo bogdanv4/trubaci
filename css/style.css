@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 15px/1.8 Lato, sans-serif;
   color: #fff;
@@ -12,6 +16,7 @@ h4 nav a {
   font-family: "Raleway", sans-serif;
 }
 
+h2,
 h3,
 h4 {
   margin: 10px 0 30px 0;
@@ -31,7 +36,7 @@ ul {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/hero.jpg");
+    url("../img/hero.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

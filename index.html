@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Trubači Balkan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Trubači za sve prilike" />
+    <meta
+      name="keywords"
+      content="trubači, trubački orkestar, svadba, rođendan, krštenje, slavlje firme, Balkan"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -14,16 +19,14 @@
       rel="stylesheet"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "j6lVrDyuoV57HnrHJ",
-        });
-      })();
-    </script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      defer
+    ></script>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -36,6 +39,7 @@
             class="navbar-toggle"
             data-toggle="collapse"
             data-target="#myNavbar"
+            aria-label="Burger menu button"
           >
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -60,9 +64,8 @@
       </div>
     </section>
 
-    <!-- Container (The Band Section) -->
     <div id="band" class="container text-center">
-      <h3>O NAMA</h3>
+      <h2>O NAMA</h2>
       <p>
         Naši trubački orkestri sa sedištem u Beogradu nastupaju širom
         <span class="color-golden"><strong>Balkana</strong></span>
@@ -81,7 +84,7 @@
       <br />
       <div class="row band-about text-center">
         <div class="col-md-6">
-          <h3><span class="heading-trumpet">🎺</span>Zašto baš mi?</h3>
+          <h2><span class="heading-trumpet">🎺</span>Zašto baš mi?</h2>
           <ul>
             <li>
               <span class="li-trumpet">🎺</span> Iskusni trubači i profesionalan
@@ -108,9 +111,9 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <h3>
+          <h2>
             <span class="heading-trumpet">🎺</span>Pogodno za svaku priliku
-          </h3>
+          </h2>
           <ul>
             <li>
               <span class="li-trumpet">🎺</span> Svadbe i svadbena veselja
@@ -145,19 +148,21 @@
       <br />
       <br />
       <br />
-      <h3>GDE SVIRAMO?</h3>
+      <h2>GDE SVIRAMO?</h2>
       <p>Dolazak je moguć na celoj teritoriji Balkana!</p>
       <br />
       <div class="map">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1AVXU7mBkFhCIM-sgv6CDKC_z16V6CAY&ehbc=2E312F&noprof=1"
+          title="map"
+          id="googleMap"
+          loading="lazy"
         ></iframe>
       </div>
     </div>
 
-    <!-- Container (Contact Section) -->
     <div id="contact" class="container">
-      <h3 class="text-center">Kontakt</h3>
+      <h2 class="text-center">Kontakt</h2>
       <p class="text-center">
         <em>Kontaktirajte nas na broj ili popunite formu</em>
       </p>
@@ -171,58 +176,67 @@
           </p>
         </div>
         <div class="col-md-8">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Ime"
-                type="text"
-                required
-              />
-              <p class="error">Error: Ime mora da sadrži barem 3 karaktera</p>
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Ime"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <p class="error">Error: Ime mora da sadrži barem 3 karaktera</p>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                  autocomplete="off"
+                />
+                <p class="error">Error: Email mora biti u validnom formatu</p>
+              </div>
             </div>
-            <div class="col-sm-6 form-group">
-              <input
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Email"
-                type="email"
-                required
-              />
-              <p class="error">Error: Email mora biti u validnom formatu</p>
+            <textarea
+              class="form-control"
+              id="comments"
+              name="comments"
+              placeholder="Poruka"
+              rows="5"
+            ></textarea>
+            <p class="error">Error: Poruka mora sadržati barem 10 karaktera</p>
+            <br />
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button id="submitBtn" class="btn pull-right" type="submit">
+                  Pošalji
+                </button>
+              </div>
             </div>
-          </div>
-          <textarea
-            class="form-control"
-            id="comments"
-            name="comments"
-            placeholder="Poruka"
-            rows="5"
-          ></textarea>
-          <p class="error">Error: Poruka mora sadržati barem 10 karaktera</p>
-          <br />
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button id="submitBtn" class="btn pull-right" type="submit">
-                Pošalji
-              </button>
-            </div>
-          </div>
-          <p class="confirm-sent text-success">
-            Poruka je poslata. <br />
-            Kontaktiraćemo Vas u najkraćem roku putem email adrese koju ste
-            ostavili!
-          </p>
+            <p class="confirm-sent text-success">
+              Poruka je poslata. <br />
+              Kontaktiraćemo Vas u najkraćem roku putem email adrese koju ste
+              ostavili!
+            </p>
+          </form>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
     <footer class="text-center">
-      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <a
+        class="up-arrow"
+        href="#myPage"
+        data-toggle="tooltip"
+        title="TO TOP"
+        aria-label="Scroll to top arrow button"
+      >
         <span class="glyphicon glyphicon-chevron-up"></span> </a
       ><br /><br />
       <p>
@@ -230,8 +244,14 @@
         <a href="#">+381 69 434 5355</a>
       </p>
     </footer>
-
-    <script src="js/animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "j6lVrDyuoV57HnrHJ",
+        });
+      })();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
